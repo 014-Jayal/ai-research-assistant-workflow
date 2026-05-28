@@ -53,7 +53,7 @@ The architecture combines:
 ## System Architecture
 
 <p align="center">
-  <img src="docs/architecture.png" alt="Architecture Diagram" width="100%">
+  <img src="docs/System Architecture.png" alt="Architecture Diagram" width="100%">
 </p>
 
 <p align="center">
