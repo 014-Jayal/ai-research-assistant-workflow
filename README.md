@@ -1,4 +1,4 @@
-# **AI Research Assistant: Multi-Agent RAG Workflow**
+<h1 align="center">AI Research Assistant: Multi-Agent RAG Workflow</h1>
 
 <p align="center">
   <b>Enterprise Workflow Automation Prototype</b><br>
@@ -21,36 +21,36 @@
 
 ---
 
-# 📌 Overview
+## Overview
 
-This project presents a **production-ready AI workflow automation system** designed to process complex research documents.
+This project presents a production-ready AI workflow automation system designed to process complex research documents.
 
-Unlike standard conversational chatbots, this system utilizes a **Retrieval-Augmented Generation (RAG)** pipeline combined with a **Multi-Agent Orchestration Workflow**. It reads technical PDFs, retrieves context-aware information, and passes it through specialized AI agents *(Analyst, Summarizer, Business Strategist)* to automatically generate structured executive reports.
+Unlike standard conversational chatbots, this system utilizes a Retrieval-Augmented Generation (RAG) pipeline combined with a Multi-Agent Orchestration Workflow. It reads technical PDFs, retrieves context-aware information, and passes it through specialized AI agents (Analyst, Summarizer, Business Strategist) to automatically generate structured executive reports.
 
 The architecture combines:
 
-- **Gemini Flash Lite**
-- **LangChain orchestration**
-- **FAISS vector retrieval**
-- **HuggingFace MiniLM embeddings**
-- **FastAPI backend APIs**
-- **Streamlit frontend interfaces**
-- **Multi-Agent AI workflows**
+- Gemini Flash Lite
+- LangChain orchestration
+- FAISS vector retrieval
+- HuggingFace MiniLM embeddings
+- FastAPI backend APIs
+- Streamlit frontend interfaces
+- Multi-Agent AI workflows
 
 ---
 
-# 🚀 Key Contributions
+## Key Contributions
 
-- ✅ **Multi-Agent Sequential Pipeline** for layered document synthesis
-- ✅ **Stateless API Backend** using FastAPI for scalable deployment
-- ✅ **Context-Aware Text Chunking** preserving semantic continuity
-- ✅ **Custom Parsing Engine** for clean Markdown rendering
-- ✅ **100% Free / Cost-Optimized Stack**
-- ✅ **Containerized Architecture** ready for Docker deployment
+- Multi-Agent Sequential Pipeline for layered document synthesis
+- Stateless API Backend using FastAPI for scalable deployment
+- Context-Aware Text Chunking preserving semantic continuity
+- Custom Parsing Engine for clean Markdown rendering
+- 100% Free / Cost-Optimized Stack
+- Containerized Architecture ready for Docker deployment
 
 ---
 
-# 🏗️ System Architecture
+## System Architecture
 
 <p align="center">
   <img src="docs/architecture.png" alt="Architecture Diagram" width="100%">
@@ -62,7 +62,7 @@ The architecture combines:
 
 ---
 
-# 🧠 RAG Workflow Pipeline
+## RAG Workflow Pipeline
 
 ```text
 User Query
@@ -88,35 +88,7 @@ AI-Generated Research Insights
 
 ---
 
-# 🖼️ Application Screenshots
-
-## 💬 Interactive RAG Question Answering
-
-<p align="center">
-  <img src="docs/screenshots/06_ai_generated_response.png" width="95%">
-</p>
-
----
-
-## 🤖 Multi-Agent Research Workflow
-
-<p align="center">
-  <img src="docs/screenshots/07_multi_agent_processing.png" width="46%">
-  <img src="docs/screenshots/08_multi_agent_report_generation.png" width="46%">
-</p>
-
----
-
-## 📄 PDF Upload & Indexing
-
-<p align="center">
-  <img src="docs/screenshots/03_document_upload_panel.png" width="42%">
-  <img src="docs/screenshots/04_document_processing_success.png" width="42%">
-</p>
-
----
-
-## ⚙️ FastAPI Swagger Documentation
+## FastAPI Swagger Documentation
 
 <p align="center">
   <img src="docs/screenshots/09_fastapi_api_documentation.png" width="95%">
@@ -124,7 +96,7 @@ AI-Generated Research Insights
 
 ---
 
-# ⚡ Technical Stack & Performance
+## Technical Stack & Performance
 
 | Component | Technology | Role | Cost Profile |
 | :--- | :--- | :--- | :--- |
@@ -137,7 +109,7 @@ AI-Generated Research Insights
 
 ---
 
-# 📂 Project Structure
+## Project Structure
 
 ```text
 ai-research-assistant-workflow/
@@ -166,38 +138,38 @@ ai-research-assistant-workflow/
 
 ---
 
-# ⚙️ Setup & Installation
+## Setup & Installation
 
-## 1️⃣ Clone Repository
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/014-Jayal/ai-research-assistant-workflow.git
 cd ai-research-assistant-workflow
 ```
 
-## 2️⃣ Create Virtual Environment
+### 2. Create Virtual Environment
 
-### Windows
+#### Windows
 
 ```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
-### Linux / macOS
+#### Linux / macOS
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-## 3️⃣ Install Dependencies
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 4️⃣ Configure Environment Variables
+### 4. Configure Environment Variables
 
 Create a `.env` file:
 
@@ -207,7 +179,7 @@ GOOGLE_API_KEY=your_gemini_api_key_here
 
 ---
 
-# 🐳 Docker Deployment
+## Docker Deployment
 
 ```bash
 docker-compose up --build
@@ -215,9 +187,9 @@ docker-compose up --build
 
 ---
 
-# ▶️ Running the Application
+## Running the Application
 
-## 🚀 Start FastAPI Backend
+### Start FastAPI Backend
 
 ```bash
 uvicorn backend.main:app --reload --port 8000
@@ -228,7 +200,7 @@ API Docs:
 
 ---
 
-## 🎨 Start Streamlit Frontend
+### Start Streamlit Frontend
 
 ```bash
 streamlit run frontend/app.py
@@ -239,33 +211,99 @@ Dashboard:
 
 ---
 
-# 🤖 Multi-Agent Workflow
+## API Endpoints
 
-| Agent | Responsibility |
+| Endpoint | Description |
 |---|---|
-| 🔬 Analyst Agent | Extract technical insights |
-| 📝 Summary Agent | Generate executive summaries |
-| 💡 Strategy Agent | Produce strategic recommendations |
+| `/upload` | Upload and process PDFs |
+| `/ask` | Contextual document question answering |
+| `/generate-report` | Multi-agent synthesis workflow |
 
 ---
 
-# ⚡ Scalability & Future Improvements
+## Multi-Agent Workflow
 
-- Pinecone / Weaviate integration
-- Conversational memory
-- Multi-document querying
+| Agent | Responsibility |
+|---|---|
+| Analyst Agent | Extract technical insights |
+| Summary Agent | Generate executive summaries |
+| Strategy Agent | Produce strategic recommendations |
+
+The sequential orchestration workflow improves:
+- response structure,
+- contextual grounding,
+- report consistency,
+- and modular AI task delegation.
+
+---
+
+## Core Engineering Insights
+
+### Agentic Delegation
+
+Standard monolithic prompts often suffer from:
+- attention degradation,
+- hallucinations,
+- inconsistent outputs.
+
+Splitting the workflow into:
+1. Analysis
+2. Summary
+3. Strategy
+
+produced significantly more structured and grounded outputs.
+
+---
+
+### Context-Aware Chunking
+
+Rather than splitting documents purely by character count, the system uses:
+- RecursiveCharacterTextSplitter
+- paragraph-aware separation
+- sentence-preserving overlap
+
+to retain contextual continuity across highly technical PDFs.
+
+---
+
+### Safe Payload Extraction
+
+A custom parsing layer intercepts Gemini API responses and strips raw JSON artifacts before frontend rendering, ensuring clean Markdown output formatting.
+
+---
+
+## Scalability & Future Improvements
+
+Potential future improvements include:
+
+- Pinecone or Weaviate vector databases
+- Conversational memory systems
+- Multi-document retrieval
 - Enterprise authentication
-- Cloud-native deployment
+- Persistent cloud indexing
+- Distributed AI orchestration
 - Citation-aware responses
 
 ---
 
-# 👨‍💻 Author
+## Author
 
-## Jayal Shah
+### Jayal Shah
 
 - GitHub: https://github.com/014-Jayal
 - LinkedIn: https://www.linkedin.com/in/jayal-shah04/
+
+---
+
+## Acknowledgements
+
+This project was developed as part of an AI Researcher / AI Innovation Engineer technical evaluation assignment focused on:
+- Retrieval-Augmented Generation (RAG)
+- Semantic Search Systems
+- AI Workflow Automation
+- Multi-Agent AI Systems
+- Practical AI Engineering
+- Production-Oriented AI Architecture
 
 ---
 
