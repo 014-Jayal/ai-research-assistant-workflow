@@ -1,107 +1,181 @@
-# 📘 AI Research Assistant
+# **AI Research Assistant: Multi-Agent RAG Workflow**
 
-An AI-powered Research Workflow Automation System built using Retrieval-Augmented Generation (RAG), Gemini LLM, FastAPI, Streamlit, FAISS, and semantic search.
+<p align="center">
+  <b>Enterprise Workflow Automation Prototype</b><br>
+  Accelerating Document Analysis with Agentic AI & Semantic Retrieval
+</p>
 
-This project enables users to upload research PDFs and generate intelligent contextual insights using AI-powered document understanding and retrieval workflows.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white">
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white">
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white">
+  <img src="https://img.shields.io/badge/Gemini_Flash_Lite-8E75B2?style=for-the-badge&logo=googlebard&logoColor=white">
+  <img src="https://img.shields.io/badge/FAISS-Vector_DB-00ADD8?style=for-the-badge">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/014-Jayal/ai-research-assistant-workflow?style=social">
+  <img src="https://img.shields.io/github/forks/014-Jayal/ai-research-assistant-workflow?style=social">
+</p>
 
 ---
 
-# 🚀 Features
+# 📌 Overview
 
-* 📄 PDF Upload & Processing
-* 🔍 Semantic Search using FAISS
-* 🧠 Gemini-powered AI Question Answering
-* 📚 Retrieval-Augmented Generation (RAG)
-* 🤖 Multi-Agent AI Workflow Architecture
-* ⚡ FastAPI Backend APIs
-* 🎨 Streamlit Frontend UI
-* 📊 Research Summarization & Insight Extraction
+This project presents a **production-ready AI workflow automation system** designed to process complex research documents.
+
+Unlike standard conversational chatbots, this system utilizes a **Retrieval-Augmented Generation (RAG)** pipeline combined with a **Multi-Agent Orchestration Workflow**. It reads technical PDFs, retrieves context-aware information, and passes it through specialized AI agents *(Analyst, Summarizer, Business Strategist)* to automatically generate structured executive reports.
+
+The architecture combines:
+
+- **Gemini Flash Lite**
+- **LangChain orchestration**
+- **FAISS vector retrieval**
+- **HuggingFace MiniLM embeddings**
+- **FastAPI backend APIs**
+- **Streamlit frontend interfaces**
+- **Multi-Agent AI workflows**
+
+---
+
+# 🚀 Key Contributions
+
+- ✅ **Multi-Agent Sequential Pipeline** for layered document synthesis
+- ✅ **Stateless API Backend** using FastAPI for scalable deployment
+- ✅ **Context-Aware Text Chunking** preserving semantic continuity
+- ✅ **Custom Parsing Engine** for clean Markdown rendering
+- ✅ **100% Free / Cost-Optimized Stack**
+- ✅ **Containerized Architecture** ready for Docker deployment
 
 ---
 
 # 🏗️ System Architecture
 
-User Uploads PDF
-↓
-Streamlit Frontend
-↓
-FastAPI Backend
-↓
-PDF Parsing & Chunking
-↓
-HuggingFace Embeddings
-↓
-FAISS Vector Database
-↓
-Semantic Retrieval
-↓
-Gemini LLM
-↓
-AI-Generated Research Insights
+<p align="center">
+  <img src="docs/architecture.png" alt="Architecture Diagram" width="100%">
+</p>
+
+<p align="center">
+  <i>End-to-end Retrieval-Augmented Generation (RAG) workflow architecture</i>
+</p>
 
 ---
 
-# 🛠️ Tech Stack
+# 🧠 RAG Workflow Pipeline
 
-## AI & Machine Learning
+```text
+User Query
+   ↓
+Streamlit Frontend
+   ↓
+FastAPI Backend
+   ↓
+PDF Parsing & Chunking
+   ↓
+MiniLM Embedding Generation
+   ↓
+FAISS Vector Store
+   ↓
+Semantic Retrieval
+   ↓
+LangChain Orchestration
+   ↓
+Gemini Flash Lite
+   ↓
+AI-Generated Research Insights
+```
 
-* Gemini API
-* LangChain
-* HuggingFace Embeddings
-* FAISS Vector Database
+---
 
-## Backend
+# 🖼️ Application Screenshots
 
-* FastAPI
-* Uvicorn
+## 💬 Interactive RAG Question Answering
 
-## Frontend
+<p align="center">
+  <img src="docs/screenshots/06_ai_generated_response.png" width="95%">
+</p>
 
-* Streamlit
+---
 
-## AI Workflow
+## 🤖 Multi-Agent Research Workflow
 
-* Retrieval-Augmented Generation (RAG)
-* Semantic Search
-* Multi-Agent Workflow Architecture
+<p align="center">
+  <img src="docs/screenshots/07_multi_agent_processing.png" width="46%">
+  <img src="docs/screenshots/08_multi_agent_report_generation.png" width="46%">
+</p>
+
+---
+
+## 📄 PDF Upload & Indexing
+
+<p align="center">
+  <img src="docs/screenshots/03_document_upload_panel.png" width="42%">
+  <img src="docs/screenshots/04_document_processing_success.png" width="42%">
+</p>
+
+---
+
+## ⚙️ FastAPI Swagger Documentation
+
+<p align="center">
+  <img src="docs/screenshots/09_fastapi_api_documentation.png" width="95%">
+</p>
+
+---
+
+# ⚡ Technical Stack & Performance
+
+| Component | Technology | Role | Cost Profile |
+| :--- | :--- | :--- | :--- |
+| **LLM Engine** | Gemini Flash Lite API | Reasoning & Summarization | Free Tier |
+| **Backend API** | FastAPI | Async routing & file handling | Open Source |
+| **Frontend UI** | Streamlit | Interactive AI dashboard | Open Source |
+| **RAG Framework** | LangChain | Agent orchestration & prompts | Open Source |
+| **Vector Database** | FAISS | Semantic similarity retrieval | Local Compute |
+| **Embeddings** | MiniLM-L6-v2 | Dense vector generation | Local Compute |
 
 ---
 
 # 📂 Project Structure
 
-```bash
-ai-research-assistant/
-│
+```text
+ai-research-assistant-workflow/
 ├── backend/
 │   ├── main.py
 │   ├── rag_engine.py
 │   ├── agents.py
+│   └── rag_pipeline.py
 │
 ├── frontend/
 │   └── app.py
 │
-├── uploaded_files/
-├── sample_data/
+├── docs/
+│   ├── architecture.png
+│   ├── screenshots/
+│   ├── AI-Powered Research Assistant Report.pdf
+│   └── AI-Powered Research Assistant Report.docx
 │
-├── .env
-├── README.md
-└── requirements.txt
+├── uploaded_files/
+├── requirements.txt
+├── docker-compose.yml
+├── Dockerfile
+├── .env.example
+└── README.md
 ```
 
 ---
 
-# ⚙️ Installation
+# ⚙️ Setup & Installation
 
-## 1. Clone Repository
+## 1️⃣ Clone Repository
 
 ```bash
-git clone <your-github-repo-url>
-cd ai-research-assistant
+git clone https://github.com/014-Jayal/ai-research-assistant-workflow.git
+cd ai-research-assistant-workflow
 ```
 
----
-
-## 2. Create Virtual Environment
+## 2️⃣ Create Virtual Environment
 
 ### Windows
 
@@ -110,163 +184,91 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
----
+### Linux / macOS
 
-## 3. Install Dependencies
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+## 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-# 🔑 Environment Variables
+## 4️⃣ Configure Environment Variables
 
 Create a `.env` file:
 
 ```env
-GOOGLE_API_KEY=your_gemini_api_key
+GOOGLE_API_KEY=your_gemini_api_key_here
 ```
 
 ---
 
-# ▶️ Running The Project
-
-## Start FastAPI Backend
+# 🐳 Docker Deployment
 
 ```bash
-uvicorn backend.main:app --reload
-```
-
-Backend runs at:
-
-```bash
-http://127.0.0.1:8000
-```
-
-Swagger API Docs:
-
-```bash
-http://127.0.0.1:8000/docs
+docker-compose up --build
 ```
 
 ---
 
-## Start Streamlit Frontend
+# ▶️ Running the Application
 
-Open another terminal:
+## 🚀 Start FastAPI Backend
+
+```bash
+uvicorn backend.main:app --reload --port 8000
+```
+
+API Docs:
+`http://localhost:8000/docs`
+
+---
+
+## 🎨 Start Streamlit Frontend
 
 ```bash
 streamlit run frontend/app.py
 ```
 
-Frontend runs at:
-
-```bash
-http://localhost:8501
-```
-
----
-
-# 🧠 AI Workflow
-
-## Step 1 — PDF Ingestion
-
-Research PDFs are uploaded and parsed.
-
-## Step 2 — Text Chunking
-
-Documents are split into semantic chunks.
-
-## Step 3 — Embedding Generation
-
-Chunks are converted into vector embeddings.
-
-## Step 4 — Vector Database
-
-Embeddings are stored in FAISS.
-
-## Step 5 — Semantic Retrieval
-
-Relevant chunks are retrieved based on user queries.
-
-## Step 6 — Gemini Response Generation
-
-Gemini generates contextual AI-powered answers.
+Dashboard:
+`http://localhost:8501`
 
 ---
 
 # 🤖 Multi-Agent Workflow
 
-The system uses role-based AI workflow architecture:
-
-* Research Analyst Agent
-* Summarization Agent
-* Recommendation Agent
-
-These agents simulate specialized AI research workflows.
+| Agent | Responsibility |
+|---|---|
+| 🔬 Analyst Agent | Extract technical insights |
+| 📝 Summary Agent | Generate executive summaries |
+| 💡 Strategy Agent | Produce strategic recommendations |
 
 ---
 
-# 📊 Example Use Cases
+# ⚡ Scalability & Future Improvements
 
-* Research Paper Analysis
-* AI Literature Review
-* Technical Document Question Answering
-* Automated Research Summarization
-* Knowledge Retrieval Systems
-* Enterprise AI Assistants
-
----
-
-# 📈 Scalability Considerations
-
-Future production improvements:
-
-* Persistent vector databases
-* Authentication & user management
-* Cloud deployment
-* Distributed retrieval systems
-* Multi-document indexing
-* Real-time agent orchestration
-
----
-
-# ⚠️ Limitations
-
-* Free-tier Gemini API quota limitations
-* Large PDFs may increase processing time
-* Retrieval quality depends on chunking strategy
-* Currently optimized for PDF-based workflows
-
----
-
-# 💡 Future Improvements
-
-* Multi-PDF querying
-* Conversational memory
-* Advanced agent orchestration
-* Hybrid search
-* Citation-aware responses
-* Cloud deployment (AWS/GCP/Azure)
-
----
-
-# 📹 Demo
-
-The application supports:
-
-✅ PDF Upload
-✅ Semantic Retrieval
-✅ AI-generated contextual answers
-✅ Research summarization workflows
+- Pinecone / Weaviate integration
+- Conversational memory
+- Multi-document querying
+- Enterprise authentication
+- Cloud-native deployment
+- Citation-aware responses
 
 ---
 
 # 👨‍💻 Author
 
-Jayal Shah
+## Jayal Shah
 
-AI/ML Engineer | Generative AI | RAG Systems | Computer Vision
+- GitHub: https://github.com/014-Jayal
+- LinkedIn: https://www.linkedin.com/in/jayal-shah04/
 
 ---
+
+<p align="center">
+  <b>Built with Gemini • LangChain • FastAPI • Streamlit • FAISS</b>
+</p>
